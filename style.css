@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+body{
+    text-align: center;
+    background: #f4c531;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+.container{
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    padding: 2rem 0;
+}
+.grid-box{
+    display: inline-grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    margin: 0px;
+    padding: 10px;
+}
+button{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100px;
+    background-color: rgb(86, 86, 86);
+    color: #fff;
+    font-size: 1rem;
+}
+#button-17 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 6.4rem;
+}
+.input{
+    max-width: 12.3rem;
+    font-size: 3rem;
+    font-weight: 200;
+    padding: 1rem;
+    padding-bottom: 0;
+    display: grid;
+    height: 4rem;
+    color: #fff;
+    align-items: end;
+    text-align: right;
+    overflow: hidden;
+    /* word-wrap: break-word; */
+}
+.bg-gray{
+    background-color: rgb(152, 152, 152);
+    color: black;
+    font-weight: 600;
+}
+.bg-yellow{
+    background: #fab618;
+    font-size: 1.5rem;
+}
+
+.small{
+    font-size: 1rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    display: block;
+}
