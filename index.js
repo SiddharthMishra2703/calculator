@@ -20,8 +20,14 @@ $("button").click(function(){
         solve = str;
     }
     else if($(this).html() == "="){
-        str = eval(solve);
-        solve = str;
+        try{
+            str = eval(solve).toString();
+            solve = str;
+        }
+        catch(x){
+            str = "error";
+            solve = str;
+        }
     }
     else{
         str += $(this).html();
@@ -34,5 +40,4 @@ $("button").click(function(){
         $("#input").removeClass("small");
     }
     $("#input").html(str);
-    console.log($(this).html());
 })
